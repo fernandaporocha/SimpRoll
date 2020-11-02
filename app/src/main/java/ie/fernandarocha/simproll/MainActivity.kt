@@ -26,7 +26,9 @@ class MainActivity : AppCompatActivity() {
     private fun countUp() {
         val resultText: TextView = findViewById(R.id.result_text)
         val resultInt = resultText.text.toString().toIntOrNull()
-        if (resultInt != null && resultInt < 6) {
+        if(resultInt==null){
+            resultText.text = "1"
+        }else if (resultInt != 6) {
             resultText.text = (resultInt+1).toString()
         }
     }
