@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SimpRoll</string>
+    <string name="button_send">Send</string>
+    <string name="button_new">New</string>
+</resources>
