@@ -3,6 +3,7 @@ package ie.fernandarocha.simproll
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
@@ -15,7 +16,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun rollDice(){
-        Toast.makeText(this, "Button clicked", Toast.LENGTH_LONG).show()
-
+        //Toast.makeText(this, "Button clicked", Toast.LENGTH_LONG).show()
+        val resultText: TextView = findViewById(R.id.result_text)
+        resultText.text = "Dice Rolled"
     }
 }
