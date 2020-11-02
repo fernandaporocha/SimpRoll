@@ -15,6 +15,8 @@ class MainActivity : AppCompatActivity() {
         rollButton.setOnClickListener { rollDice() }
         val countUpButton: Button = findViewById(R.id.countup_button)
         countUpButton.setOnClickListener{ countUp() }
+        val resetButton: Button = findViewById(R.id.reset_button)
+        resetButton.setOnClickListener{ reset() }
     }
 
     private fun rollDice(){
@@ -31,5 +33,10 @@ class MainActivity : AppCompatActivity() {
         }else if (resultInt != 6) {
             resultText.text = (resultInt+1).toString()
         }
+    }
+
+    private fun reset(){
+        val resultText = findViewById<TextView>(R.id.result_text)
+        resultText.text = "0"
     }
 }
